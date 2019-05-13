@@ -136,7 +136,7 @@ def test():
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.1f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
-    return correct / float(len(test_loader.dataset))
+    return 1. * correct / float(len(test_loader.dataset))
 
 
 def save_checkpoint(state, is_best, filename='checkpoint.pth.tar'):
